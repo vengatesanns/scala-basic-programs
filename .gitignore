@@ -1,0 +1,7 @@
+.iml
+/src/exercise/
+/src/playground/
+/src/training/
+
+out
+.idea
