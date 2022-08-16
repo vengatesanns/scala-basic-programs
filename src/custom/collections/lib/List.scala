@@ -65,9 +65,10 @@ class LinkedList[A] extends CList[A] {
   // To Print the LinkedList
   def print(): Unit = {
     def printlist(currElementNode: Node[A]): String = {
-      if (currElementNode.nextNode == null) return currElementNode.currElement.toString
+      if (currElementNode.nextNode == null) currElementNode.currElement.toString
       else {
-        currElementNode.currElement + " -> " + printlist(currElementNode.nextNode)
+        ""
+        //        s"${currElementNode.currElement}  -> printlist(currElementNode.nextNode)
       }
     }
 
@@ -109,7 +110,7 @@ object Main extends App {
   employeeList.add("Senthil")
   employeeList.add("Jei")
   employeeList.add("Maria Dass")
-  println(employeeList.print)
+//  println(employeeList.print)
   println(employeeList.head)
   println(employeeList.tail)
   println(employeeList.isEmpty)
